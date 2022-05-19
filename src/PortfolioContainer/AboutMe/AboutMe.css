@@ -1,0 +1,139 @@
+.about-me {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+.about-me-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.about-me-right {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Poppins';
+}
+
+.about-me-card {
+    width: 60%;
+    height: 70vh;
+    border-radius: 30px;
+}
+
+.background {
+    background-image: url('../../assets/rehearsal-pic.JPG');
+    border: white;
+    border-width: 10px;
+    border-style: solid;
+    background-size: cover;
+    position: relative;
+    transition: 0.6s;
+    opacity: 80%;
+}
+
+.background:hover {
+    border-width: 0px;
+    opacity: 100%;
+    transform: translate(-10px, -10px);
+    transition: 0.6s;
+}
+
+.about-me-card.image-frame {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #F2CC8F;
+}
+
+.about-me-header {
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.about-me-desc {
+    font-size: 19px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.md {
+    margin: 15px 0 0 0;
+}
+
+.main-description-box {
+    margin: 0 10px 30px 0;
+    background-color: #F4F1DE;
+    border-radius: 30px;
+    font-weight: 100;
+    transition: 0.6s;
+}
+
+.about-me-desc .main-description-box:hover {
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.6s;
+    background-color: #F2CC8F;
+    color:#FFF;
+}
+
+.skill-set {
+    justify-content: center;
+    display: flex;
+    height: 200px;
+}
+
+.skill-years {
+    color:#FFF;
+    flex: 1;
+    border-radius: 30px;
+    margin: 10px 10px 0 0;
+    background-color: #81B29A;
+}
+
+.skill-years-int .skill-years-measure {
+    font-size: 19px;
+}
+
+.skill-backend {
+    flex: 1;
+    border-radius: 30px;
+    margin: 10px 10px 0 0;
+    background-color: #F4F1DE;
+}
+
+.fa-java, .fa-cloud {
+    margin: 20px 0 0 0;
+}
+
+.springboot-set, .aks {
+    margin: 20px 0 0 0;
+}
+
+.skill-devops {
+    flex: 1;
+    background-color: #F4F1DE;
+    border-radius: 30px;
+    margin: 10px 10px 0 0;
+}
+
+.about-me-desc .skill-set .skill-set-wrapper:hover {
+    transition: 0.6s;
+    background-color: #F2CC8F;
+    color:#FFF;
+}
+
+.skill-set .skill-set-wrapper {
+    transition: 0.6s;
+}
+
+.skill-years-int {
+    font-size: 64px;
+}
