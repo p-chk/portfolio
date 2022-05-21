@@ -1,135 +1,197 @@
 .profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    height: 100vh;
-    background-color: #050518;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  height: 100vh;
+  width: 100vw;
+  background-color: #050518;
 }
 
 .profile-parent {
-    flex: 1;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    color: #F4F1DE;
+  flex: 1;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #f4f1de;
 }
 
 :where(.cm) {
-    transition: 0.6s;
-    margin: 0 15px 0 0px;
-    color: #F4F1DE;
+  transition: 0.6s;
+  padding: 0 0 0 15px;
+  margin: 0 15px 0 0px;
+  color: #f4f1de;
 }
 
 :where(.cm:hover) {
-    transition: 0.6s;
-    color: #E07A5F;
+  transition: 0.6s;
+  color: #e07a5f;
 }
 
 .profile-details-name {
-    font-size: 24px;
-    color: #F4F1DE;
-    font-family: Roboto, sans-serif;
+  font-size: 24px;
+  color: #f4f1de;
+  font-family: Roboto, sans-serif;
 }
 
 .profile-details-role {
-    flex-direction: column;
-    margin: 14px 0 24px 0;
+  flex-direction: column;
+  margin: 14px 0 24px 0;
 }
 
 .profile-details-role h1 {
-    width: 100%;
-    font-size: 24px;
-    font-family: 'Poppins';
-    color: white;
-    font-weight: bold;
+  width: 100%;
+  font-size: 24px;
+  font-family: "Poppins";
+  color: white;
+  font-weight: bold;
 }
 
 .primary-text {
-    font-size: 40px;
-    color: white;
+  font-size: 40px;
+  color: white;
 }
 
 .profile-rol-tagline {
-    font-size: 19px;
-    margin: 5px 0 0 0;
-    font-family: Roboto, sans-serif;
+  font-size: 19px;
+  margin: 5px 0 0 0;
+  font-family: Roboto, sans-serif;
 }
 
 .profile-options .btn-outline-info {
-    transition: 0.6s;
-    background-color: transparent;
-    color: #FFF;
-    border-color: #E07A5F;
-   font-family: 'Poppins';
-   border-radius: 20px;
+  transition: 0.6s;
+  background-color: transparent;
+  color: #fff;
+  border-color: #e07a5f;
+  font-family: "Poppins";
+  border-radius: 20px;
 }
 
 .profile-options:hover .btn-outline-info {
-    background-color: #E07A5F;
-    transition: width 0.6s;
+  background-color: #e07a5f;
+  transition: width 0.6s;
 }
 
 .profile-picture {
-    margin: 0 0 0 100px;
-    align-items: center;
-    justify-content: left;
-    box-shadow:0cm;
-    display: flex;
-    position: relative;
-    border-radius: 50%;
-    flex: 1;
-    height: 100%;
-
+  margin: 0 0 0 100px;
+  align-items: center;
+  justify-content: left;
+  box-shadow: 0cm;
+  display: flex;
+  position: relative;
+  border-radius: 50%;
+  flex: 1;
+  height: 100%;
 }
 
 .profile-picture-background {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    transition: 0.6s;
-    border-radius: 50%;
-    height: 380px;
-    width: 380px;
-    background-image: url('../../assets/Profile-Picture.jpg');
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: 0.6s;
+  border-radius: 50%;
+  max-height: 340px;
+  max-width: 340px;
+  min-height: 170px;
+  min-width: 170px;
+  height: 25vw;
+  width: 25vw;
+  background-image: url("../../assets/Profile-Picture.jpg");
   padding: 10px;
   box-shadow: 90px 0px white;
-    background-size: cover;
+  background-size: cover;
 }
 
 .profile-picture-background:hover {
-    position: relative;
-    display: flex;
-    transition: 0.6s;
-    justify-content: left;
-    height: 500px;
-    width: 500px;
+  position: relative;
+  display: flex;
+  transition: 0.6s;
+  justify-content: left;
+  height: 500px;
+  width: 500px;
   box-shadow: none;
-
 }
 
 .primary-text-bold {
-    font-family: 'Quicksand', serif;
-    font-weight: bold;
-    font-size: 64px;
-    color: #F2CC8F;
+  font-family: "Quicksand", serif;
+  font-weight: bold;
+  font-size: 5vw;
+  color: #f2cc8f;
 }
 
 .slide {
-    animation-name: down;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    bottom: 20px;
-    color: white;
-    justify-content: center;
-    position: absolute;
+  animation-name: down;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  bottom: 20px;
+  color: white;
+  justify-content: center;
+  position: absolute;
 }
 
 @keyframes down {
-    0% {transform: translate(0px,0px);}
-    50% {transform: translate(0px,10px);}
-    100% {transform: translate(0px,0px);}
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .profile-container {
+    flex-direction: column-reverse;
+    padding: 20px 0 0 0;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
   }
 
+  .primary-text {
+    font-size: 20px;
+  }
+
+  .profile-details-role h1 {
+    font-size: 19px;
+  }
+
+  .profile-rol-tagline {
+    font-size: 14px;
+  }
+
+  .profile-picture-background {
+    box-shadow: none;
+    background-size: cover;
+  }
+
+  .profile-picture-background:hover {
+    transition: 0.6s;
+    justify-content: left;
+    height: 200px;
+    width: 200px;
+    box-shadow: none;
+  }
+
+  .profile-picture {
+    margin: 0 0 0 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+  }
+
+  .slide {
+    animation-name: down;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    bottom: 100px;
+    right: 20px;
+    color: white;
+    position: absolute;
+  }
+}
