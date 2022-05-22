@@ -75,7 +75,7 @@ button.contact-me-email-form {
     box-shadow: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .contact-me-title {
         font-size: 26px;
         width: 100%;
